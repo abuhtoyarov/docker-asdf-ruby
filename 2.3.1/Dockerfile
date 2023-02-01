@@ -39,7 +39,6 @@ RUN git clone https://github.com/asdf-vm/asdf.git ~/.asdf --branch v0.10.2 && \
 RUN asdf plugin add ruby && \
 		asdf install ruby 2.3.1 && \
 		asdf global ruby 2.3.1 && \
-		gem update --system && \
     gem install bundler:1.17.3 && \
     bundle config ssl_verify_mode 0 && \
     echo ":ssl_verify_mode: 0" > ~/.gemrc
